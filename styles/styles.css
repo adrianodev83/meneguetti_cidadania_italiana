@@ -1,0 +1,410 @@
+/* Reset básico */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    --bege: #E6E0D6;
+    --cor-escuro: #006341;
+    --cor-claro: #008C45;
+    --cor-vermelho: #b30000;
+    height: 4000px;
+    scroll-behavior: smooth;
+}
+
+input[type=checkbox] {
+    border: 2px solid var(--cor-claro);
+    box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+    background-color: var(--cor-claro);
+    border-color: var(--cor-claro);
+    box-shadow: none;
+    outline: none;
+}
+
+.botao-padrao {
+    background-color: var(--cor-claro);
+    color: white;
+}
+
+/* Navbar */
+header {
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    margin: 0 15px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #008C45;
+}
+
+/* Hero Banner */
+.hero-banner {
+  min-height: 100vh;
+  position: relative;
+  background: url("/assets/banner_cidadania1.png") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.direito {
+    color: var(--cor-vermelho);
+} 
+
+.hero-banner .container {
+  height: 100%;
+  position: relative;
+}
+
+.hero-banner h1,
+.hero-banner p {
+    color: #333333;
+}
+
+.hero-banner .btn-success {
+    background-color: var(--cor-claro);
+    border: none;
+}
+
+.hero-banner .btn-success:hover {
+    background-color: var(--cor-escuro);
+}
+
+.hero-img-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.hero-img {
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media (max-width: 991.98px) {
+  .hero-img {
+    max-height: 90vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+    .hero-img {
+        display: none;
+    }
+
+    .hero-banner .container {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Seção Serviços */
+.servicos {
+    background-color: #f9f9f9;
+}
+
+.servicos h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+.btn-success {
+    background-color: var(--cor-claro);
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: var(--cor-escuro);
+}
+
+/* Parallax Divisor */
+.parallax-divisor {
+    background-image: url("/assets/divisor-parallax.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/* Diferenciais */
+.diferenciais {
+    background-color: #f0f4f0;
+}
+
+.diferenciais h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #006341;
+}
+
+.diferenciais i {
+  color: var(--cor-claro);
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: transform, opacity;
+}
+
+.diferenciais i.show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Como Funciona */
+.como-funciona {
+    background-color: #ffffff;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.como-funciona h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #006341;
+}
+
+.como-funciona h5 {
+    color: #006341;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.como-funciona p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.como-funciona img {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transform: translateX(0);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.como-funciona .from-left {
+    transform: translateX(-50px);
+}
+
+.como-funciona .from-right {
+    transform: translateX(50px);
+}
+
+.como-funciona img.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.depoimentos {
+  background-color: var(--cor-claro); /* #008C45 */
+}
+
+.depoimento-card {
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  min-height: 230px;
+}
+
+.depoimento-card::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  .depoimentos .depoimento-card {
+    margin-bottom: 2rem;
+  }
+}
+
+
+
+.faq .accordion-button {
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center; /* Centraliza o conteúdo */
+  padding: 20px;
+  position: relative;
+}
+
+/* Garante que a seta (ícone de collapse) esteja posicionada à direita */
+.faq .accordion-button::after {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0; /* Remove margin que causa desalinhamento */
+}
+
+/* Remove foco azulado */
+.faq .accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* Estilo da aba aberta */
+.faq .accordion-button:not(.collapsed) {
+  background-color: #e6f0ec;
+  color: var(--cor-claro);
+}
+
+/* Estilização geral da seção */
+.faq {
+  background-color: var(--cor-claro);
+  padding: 60px 20px;
+}
+
+.faq h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq .accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq .accordion-item {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: none;
+}
+
+.faq .accordion-body {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 40px;
+}
+
+
+/* Banner CTA */
+.cta-final {
+    background-color: #006341;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-final h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.cta-final .btn-white {
+    background-color: #ffffff;
+    color: #006341;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-final .btn-white:hover {
+    background-color: #e6e6e6;
+    color: #004d33;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background-color: var(--cor-vermelho);
+    color: #333;
+    padding: 60px 20px 30px 20px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer .footer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .footer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/IconeColiseu.svg') no-repeat center;
+    background-size: 60%;
+    opacity: 0.05;
+    z-index: 1;
+    pointer-events: none;
+}
+

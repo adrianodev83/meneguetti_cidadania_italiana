@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>Meneguetti Cidadania Italiana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-expand-xl navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/Logo Cindadania.svg"
+                        alt="Logo da Meneguetti Cidadania Italiana"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/assets/LogoMenor.png"
+                                alt="Logo menor da cafeteria Serenatto"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#servicos">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Pesquisa"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-banner d-flex align-items-center min-vh-100" id="inicio">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <!-- Texto -->
+                    <div class="col-md-6 text-md-start text-center z-2">
+                        <h1 class="display-4 fw-bold">Esse <span class="direito">direito</span> é seu!<br>Transforme seu
+                            sonho<br>em realidade</h1>
+                        <p class="lead">Assessoria completa para sua cidadania italiana.</p>
+                        <a href="#servicos" class="btn btn-success mt-3">Quero minha Cidadania</a>
+                    </div>
+                </div>
+
+                <!-- Moça fixa ao fundo -->
+                <div class="hero-img-wrapper d-none d-md-block">
+                    <img src="./assets/MOÇA.png" alt="Moça Passaporte" class="hero-img img-fluid">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="servicos py-5">
+            <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+            <div class="container d-flex justify-content-around flex-wrap">
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="./assets/Análise-Genealógica-card.png" class="card-img-top" alt="Análise-Genealógica">
+                    <div class="card-body">
+                        <h5 class="card-title py-2 fw-bold">Análise Genealógica</h5>
+                        <p class="card-text">Realizamos o estudo da sua árvore genealógica para identificar a linhagem
+                            italiana, garantindo a confirmação do seu direito à cidadania de forma segura e precisa.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="./assets/Busca-Documental-card.png" class="card-img-top" alt="Busca Documental">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Busca Documental</h5>
+                        <p class="card-text">Localizamos certidões de nascimento, casamento e óbito no Brasil e na
+                            Itália, corrigindo e validando documentos essenciais para dar continuidade ao seu processo
+                            de cidadania.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-2" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="./assets/Processo-Administrativo-card.png" class="card-img-top"
+                        alt="Processo Administrativo">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Processo Administrativo</h5>
+                        <p class="card-text">Atuamos diretamente na Itália para organizar e protocolar seu pedido de
+                            cidadania em comunas, agilizando o reconhecimento de forma segura, sem filas e com suporte
+                            especializado.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-3" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="/assets/Processo-Judicial-card.png" class="card-img-top" alt="Processo Judicial">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Processo Judicial</h5>
+                        <p class="card-text">Ingressamos com ações judiciais na Itália para garantir seu reconhecimento
+                            de cidadania em casos de longas filas nos consulados, sempre com assessoria jurídica
+                            especializada.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-4" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="/assets/Traduções-Apostilamento-card.png" class="card-img-top"
+                        alt="Traduções e Apostilamento">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Traduções e Apostilamento</h5>
+                        <p class="card-text">Oferecemos traduções juramentadas e apostilamento de todos os documentos
+                            exigidos pelas autoridades italianas, assegurando validade e aceitação internacional.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-5" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+
+                <div class="card m-4" style="width: 20rem;">
+                    <img src="/assets/Atualização-AIRE-Passaporte.png" class="card-img-top"
+                        alt="Atualização AIRE e Passaporte">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Att. de AIRE e Passaporte</h5>
+                        <p class="card-text">Cuidamos da sua inscrição no AIRE e orientamos no processo de solicitação
+                            do passaporte italiano, garantindo a regularização da sua cidadania e dos seus direitos na
+                            Itália.</p>
+                        <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas-6" aria-controls="offcanvasRight">Quero detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARALLAX DIVISOR entre Serviços e Diferenciais -->
+        <section class="parallax-divisor"></section>
+
+        <!-- NOSSOS DIFERENCIAIS -->
+        <section class="diferenciais text-center py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-5">Nossos Diferenciais</h2>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-md-4">
+                        <i class="bi bi-person-check fs-1 text-success"></i>
+                        <h5 class="mt-3">Atendimento Personalizado</h5>
+                        <p>Oferecemos suporte humanizado, focado em cada realidade familiar.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-people fs-1 text-success"></i>
+                        <h5 class="mt-3">Equipe Binacional</h5>
+                        <p>Profissionais no Brasil e na Itália atuando de forma integrada.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="bi bi-shield-check fs-1 text-success"></i>
+                        <h5 class="mt-3">Processo Transparente</h5>
+                        <p>Transparência e clareza em cada etapa do processo.</p>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <img src="./assets/selo-5-estrelas.png" alt="Selo de Confiança 5 Estrelas" class="img-fluid"
+                        style="max-height: 80px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section class="como-funciona py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5">Como Funciona?</h2>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="/assets/etapa-1.png" alt="Etapa 1" class="img-fluid rounded from-left">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">1. Análise Genealógica</h5>
+                        <p>Coletamos informações sobre sua ascendência italiana para confirmar sua elegibilidade à
+                            cidadania.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center flex-md-row-reverse mb-5">
+                    <div class="col-md-6">
+                        <img src="/assets/etapa-2.png" alt="Etapa 2" class="img-fluid rounded from-right">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">2. Busca Documental</h5>
+                        <p>Localizamos e organizamos todas as certidões necessárias no Brasil e na Itália, com correções
+                            quando necessário.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="/assets/etapa-3.png" alt="Etapa 3" class="img-fluid rounded from-left">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">3. Traduções e Apostilamento</h5>
+                        <p>Traduzimos e validamos todos os documentos conforme exigências consulares e italianas.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center flex-md-row-reverse mb-5">
+                    <div class="col-md-6">
+                        <img src="/assets/etapa-4.png" alt="Etapa 4" class="img-fluid rounded from-right">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">4. Protocolo do Processo</h5>
+                        <p>Enviamos ou protocolamos seu processo administrativo ou judicial, conforme sua realidade e
+                            escolha.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-6">
+                        <img src="/assets/etapa-5.png" alt="Etapa 5" class="img-fluid rounded from-left">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fw-bold">5. Reconhecimento e Passaporte</h5>
+                        <p>Após o reconhecimento oficial, orientamos sobre o registro no AIRE e emissão do seu
+                            passaporte italiano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimentos text-white py-5">
+            <div class="container text-center">
+                <div class="mb-4">
+                    <i class="bi bi-chat-quote-fill fs-1 text-white"></i>
+                    <h2 class="fw-bold mt-2">O que nossos clientes dizem</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <!-- Depoimento 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="depoimento-card p-4">
+                            <p class="mb-3">"Fiquei encantada com o atendimento! Todo o processo foi explicado com
+                                clareza e agilidade."</p>
+                            <div class="mb-2 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fw-bold mb-0">Fernanda Souza</p>
+                            <small>Campinas/SP</small>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="depoimento-card p-4">
+                            <p class="mb-3">"Serviço impecável! Recebi suporte em todas as etapas e fui muito bem
+                                orientado."</p>
+                            <div class="mb-2 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fw-bold mb-0">Rafael Lima</p>
+                            <small>Florianópolis/SC</small>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="depoimento-card p-4">
+                            <p class="mb-3">"Consegui minha cidadania com segurança e tranquilidade. Recomendo muito!"
+                            </p>
+                            <div class="mb-2 text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fw-bold mb-0">Juliana Costa</p>
+                            <small>São Paulo/SP</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq py-5" id="faq">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-5 text-white">Perguntas Frequentes</h2>
+
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+                                Quem tem direito à cidadania italiana?
+                                <i class="bi bi-chevron-down ms-auto rotate-icon"></i>
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Todo descendente de italiano pode ter direito, desde que cumpra os requisitos legais e
+                                comprove sua linhagem.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item shadow-sm mt-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                Preciso falar italiano para fazer o processo?
+                                <i class="bi bi-chevron-down ms-auto rotate-icon"></i>
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Não. O idioma não é obrigatório para os processos administrativos e judiciais.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item shadow-sm mt-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                Posso incluir meus filhos no processo?
+                                <i class="bi bi-chevron-down ms-auto rotate-icon"></i>
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sim! Filhos menores e maiores de idade podem ser incluídos, desde que atendam às
+                                exigências.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner de Chamada Final -->
+        <section class="cta-final text-center py-5">
+            <div class="container">
+                <h2 class="text-white fw-bold display-5">Está pronto para conquistar sua cidadania italiana?</h2>
+                <a href="#contato" class="btn btn-light btn-lg mt-4 fw-bold px-5 py-2">Inicie seu processo agora</a>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="footer text-white position-relative">
+            <div class="overlay"></div>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Endereço</h5>
+                        <p>Rua da Cidadania, 100<br>Centro - Araçatuba/SP<br>CEP 16010-000</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Contato</h5>
+                        <p>Email: atendimento@meneguetti.com<br>WhatsApp: (18) 99999-9999</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h5 class="fw-bold">Links Úteis</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Política de Privacidade</a></li>
+                            <li><a href="#" class="text-white">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <small>&copy; 2025 Meneguetti Cidadania Italiana. Todos os direitos reservados.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- canvas 1 - Análise Genealógica -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="canvas1Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Análise Genealógica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1-1">
+                                Montagem da Árvore Familiar
+                            </button>
+                        </h2>
+                        <div id="collapse1-1" class="accordion-collapse collapse show" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Coletamos dados e documentos dos ancestrais para construir sua árvore genealógica com
+                                foco na linha italiana.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1-2">
+                                Verificação de Elegibilidade
+                            </button>
+                        </h2>
+                        <div id="collapse1-2" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Analisamos a linha de transmissão e detectamos possíveis impedimentos para o
+                                reconhecimento da cidadania.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1-3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1-3">
+                                Relatório Genealógico Completo
+                            </button>
+                        </h2>
+                        <div id="collapse1-3" class="accordion-collapse collapse" data-bs-parent="#accordion1">
+                            <div class="accordion-body">
+                                Entregamos um relatório com todos os dados documentados e verificados para embasar o
+                                início do processo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- canvas 2 - Busca Documental -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="canvas2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Busca Documental</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2-1">
+                                Certidões no Brasil
+                            </button>
+                        </h2>
+                        <div id="collapse2-1" class="accordion-collapse collapse show" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                Buscamos certidões civis (nascimento, casamento, óbito) em cartórios e arquivos
+                                nacionais.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2-2">
+                                Certidões na Itália
+                            </button>
+                        </h2>
+                        <div id="collapse2-2" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                Localizamos certidões italianas nas comunas ou paróquias de origem da família.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2-3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2-3">
+                                Correções e Retificações
+                            </button>
+                        </h2>
+                        <div id="collapse2-3" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+                            <div class="accordion-body">
+                                Sugerimos e indicamos ações para corrigir divergências nos registros civis identificados
+                                durante a busca.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- canvas 3 - Processo Administrativo -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="canvas3Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Processo Administrativo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3-1">
+                                Protocolo em Comuna Italiana
+                            </button>
+                        </h2>
+                        <div id="collapse3-1" class="accordion-collapse collapse show" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                Organizamos a documentação para dar entrada no processo direto na Itália.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3-2">
+                                Acompanhamento na Itália
+                            </button>
+                        </h2>
+                        <div id="collapse3-2" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                Oferecemos suporte presencial durante todo o trâmite no município italiano escolhido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3-3">
+                                Hospedagem e Suporte Local
+                            </button>
+                        </h2>
+                        <div id="collapse3-3" class="accordion-collapse collapse" data-bs-parent="#accordion3">
+                            <div class="accordion-body">
+                                Auxiliamos com estrutura local: moradia, traduções e orientações legais durante a
+                                estadia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- canvas 4 - Processo Judicial -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-4" aria-labelledby="canvas4Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Processo Judicial</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion4">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4-1">
+                                Ação Judicial via Materna
+                            </button>
+                        </h2>
+                        <div id="collapse4-1" class="accordion-collapse collapse show" data-bs-parent="#accordion4">
+                            <div class="accordion-body">
+                                Protocolamos ações específicas para reconhecimento por linha materna antes de 1948.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4-2">
+                                Ação Judicial por Fila Consular
+                            </button>
+                        </h2>
+                        <div id="collapse4-2" class="accordion-collapse collapse" data-bs-parent="#accordion4">
+                            <div class="accordion-body">
+                                Ingressamos com ações para evitar esperas excessivas nos consulados brasileiros.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4-3">
+                                Representação Jurídica Completa
+                            </button>
+                        </h2>
+                        <div id="collapse4-3" class="accordion-collapse collapse" data-bs-parent="#accordion4">
+                            <div class="accordion-body">
+                                Contamos com equipe jurídica qualificada atuando junto aos tribunais italianos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- canvas 5 - Traduções e Apostilamento -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-5" aria-labelledby="canvas5Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Traduções e Apostilamento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion5">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5-1">
+                                Traduções Juramentadas
+                            </button>
+                        </h2>
+                        <div id="collapse5-1" class="accordion-collapse collapse show" data-bs-parent="#accordion5">
+                            <div class="accordion-body">
+                                Traduzimos todos os documentos para o italiano com tradutores certificados.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5-2">
+                                Apostilamento de Haia
+                            </button>
+                        </h2>
+                        <div id="collapse5-2" class="accordion-collapse collapse" data-bs-parent="#accordion5">
+                            <div class="accordion-body">
+                                Validamos oficialmente seus documentos em cartórios reconhecidos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5-3">
+                                Revisão Técnica Documental
+                            </button>
+                        </h2>
+                        <div id="collapse5-3" class="accordion-collapse collapse" data-bs-parent="#accordion5">
+                            <div class="accordion-body">
+                                Garantimos que o conteúdo traduzido e apostilado esteja em conformidade com os padrões
+                                italianos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- canvas 6 - Atualização AIRE e Passaporte -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-6" aria-labelledby="canvas6Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Atualização AIRE e Passaporte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="accordion6">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6-1">
+                                Inscrição no AIRE
+                            </button>
+                        </h2>
+                        <div id="collapse6-1" class="accordion-collapse collapse show" data-bs-parent="#accordion6">
+                            <div class="accordion-body">
+                                Realizamos sua inscrição no cadastro de cidadãos italianos residentes no exterior.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6-2">
+                                Solicitação de Passaporte
+                            </button>
+                        </h2>
+                        <div id="collapse6-2" class="accordion-collapse collapse" data-bs-parent="#accordion6">
+                            <div class="accordion-body">
+                                Orientamos e auxiliamos no agendamento, emissão e retirada do passaporte italiano.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6-3">
+                                Atualização de Dados
+                            </button>
+                        </h2>
+                        <div id="collapse6-3" class="accordion-collapse collapse" data-bs-parent="#accordion6">
+                            <div class="accordion-body">
+                                Atualizamos dados pessoais e familiares já registrados no consulado ou comune.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./scripts/animations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
