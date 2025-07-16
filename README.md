@@ -6,7 +6,7 @@ Landing page desenvolvida para o projeto **Meneguetti Cidadania Italiana**, com 
 
 ## 🔗 Acesse o Projeto
 
-> Link do projeto hospedado: _[Inserir link após deploy]_
+> Link do projeto hospedado: _[https://meneguetti-cidadania-italiana.vercel.app/]_
 
 ---
 
